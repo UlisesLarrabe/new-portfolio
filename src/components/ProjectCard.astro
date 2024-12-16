@@ -1,0 +1,37 @@
+---
+import LinksToCodePreview from "./LinksToCodePreview.astro";
+import TechUsedSection from "./TechUsedSection.astro";
+
+const { project } = Astro.props;
+---
+
+<article class="flex md:flex-row flex-col text-[#DAE7E4] md:gap-3 w-full gap-5">
+  <a
+    href={project.page}
+    target="_blank"
+    rel="noopener"
+    class="w-full h-[200px] flex justify-center"
+  >
+    <img
+      class="rounded transition-transform hover:scale-105 border-gray-400 border-[1px] object-cover w-[350px] h-auto"
+      src={project.img}
+      width={350}
+      height={350}
+      alt={project.title}
+    />
+  </a>
+  <main class="w-[100%] flex flex-col md:justify-around md:gap-0 gap-3">
+    <h3 class="font-semibold text-2xl">{project.title}</h3>
+    <TechUsedSection techUsed={project.techUsed} />
+    <p class="text-pretty text-gray-400">{project.description}</p>
+    {
+      (project.page || project.github || project.github_two) && (
+        <LinksToCodePreview
+          github={project.github}
+          page={project.page}
+          backend={project.github_two}
+        />
+      )
+    }
+  </main>
+</article>
