@@ -2,7 +2,7 @@
 import LinksToCodePreview from "./LinksToCodePreview.astro";
 import TechUsedSection from "./TechUsedSection.astro";
 
-const { title, date, info, page, github, techUsed } = Astro.props;
+const { title, date, info, page, github, techUsed, secondInfo } = Astro.props;
 ---
 
 <>
@@ -34,6 +34,13 @@ const { title, date, info, page, github, techUsed } = Astro.props;
   <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
     {info}
   </p>
+  {
+    secondInfo && (
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        {secondInfo}
+      </p>
+    )
+  }
 
   <div class="flex flex-col gap-5">
     <TechUsedSection techUsed={techUsed} />
