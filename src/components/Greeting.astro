@@ -4,7 +4,7 @@ import LinkedInIcon from "./icons/LinkedInIcon.astro";
 import GithubIcon from "./icons/GithubIcon.astro";
 import MailIcon from "./icons/MailIcon.astro";
 import LinkBadge from "./LinkBadge.astro";
-import CvIcon from "./icons/cvIcon.astro";
+import CvIcon from "./icons/CvIcon.astro";
 ---
 
 <section class="w-5/5 pt-7 flex flex-col gap-4">
@@ -43,7 +43,7 @@ import CvIcon from "./icons/cvIcon.astro";
     <div class="flex">
       <LinkBadge to="mailto:larrabeulises@gmail.com" classInfo="flex ">
         <Badge
-          colors="bg-blue-100 text-[#ffff] text-xs py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center"
+          colors="bg-blue-100 text-[#ffff] text-xs py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center gap-2"
         >
           <MailIcon />
           Contáctame
@@ -54,7 +54,7 @@ import CvIcon from "./icons/cvIcon.astro";
         classInfo="flex "
       >
         <Badge
-          colors="bg-blue-100 text-[#ffff] text-xs  rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center"
+          colors="bg-blue-100 text-[#ffff] text-xs  rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center gap-2"
         >
           <LinkedInIcon />
           LinkedIn
@@ -62,7 +62,7 @@ import CvIcon from "./icons/cvIcon.astro";
       </LinkBadge>
       <LinkBadge to="https://github.com/UlisesLarrabe" classInfo="flex ">
         <Badge
-          colors="bg-blue-100 text-[#ffff] text-xs rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center"
+          colors="bg-blue-100 text-[#ffff] text-xs rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center gap-2"
         >
           <GithubIcon />
           Github
@@ -74,7 +74,7 @@ import CvIcon from "./icons/cvIcon.astro";
         isDownload={"cv-ulises-alejandro-larrabe.pdf"}
       >
         <Badge
-          colors="bg-blue-100 text-[#ffff] text-xs rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center"
+          colors="bg-blue-100 text-[#ffff] text-xs rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center gap-2"
         >
           <CvIcon />
           Descargar CV
