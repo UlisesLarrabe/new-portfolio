@@ -4,6 +4,7 @@ import LinkedInIcon from "./icons/LinkedInIcon.astro";
 import GithubIcon from "./icons/GithubIcon.astro";
 import MailIcon from "./icons/MailIcon.astro";
 import LinkBadge from "./LinkBadge.astro";
+import CvIcon from "./icons/cvIcon.astro";
 ---
 
 <section class="w-5/5 pt-7 flex flex-col gap-4">
@@ -65,6 +66,18 @@ import LinkBadge from "./LinkBadge.astro";
         >
           <GithubIcon />
           Github
+        </Badge>
+      </LinkBadge>
+      <LinkBadge
+        to="/cv-ulises-alejandro-larrabe.pdf"
+        classInfo="flex"
+        isDownload={"cv-ulises-alejandro-larrabe.pdf"}
+      >
+        <Badge
+          colors="bg-blue-100 text-[#ffff] text-xs rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center"
+        >
+          <CvIcon />
+          Descargar CV
         </Badge>
       </LinkBadge>
     </div>

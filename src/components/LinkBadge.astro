@@ -1,5 +1,5 @@
 ---
-const { to, classInfo } = Astro.props;
+const { to, classInfo, isDownload } = Astro.props;
 ---
 
 <a
@@ -7,6 +7,7 @@ const { to, classInfo } = Astro.props;
   target="_blank"
   rel="noopener"
   class={"hover:scale-105 transition-transform " + classInfo}
+  download={isDownload ?? null}
 >
   <slot />
 </a>
